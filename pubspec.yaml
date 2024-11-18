@@ -1,7 +1,7 @@
 name: licensehash_key_generator
 description: "The application generate Licenses Keys and there hashes."
 publish_to: 'none'
-version: 0.1.0
+version: 0.2.0
 
 environment:
   sdk: ^3.5.3
@@ -11,7 +11,8 @@ dependencies:
     sdk: flutter
   # hash the key
   crypto: ^3.0.6 
-
+  # create jwt token (JSON Web Tokens)
+  dart_jsonwebtoken: ^2.14.1
 
 dev_dependencies:
   flutter_test:
