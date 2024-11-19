@@ -39,10 +39,11 @@ class _JWTTokenGeneratorState extends State<JWTTokenGenerator> {
     jsonPayload.addAll(
       {
         'iat': DateTime.now().millisecondsSinceEpoch ~/ 1000, // Issued at time
-        'exp': DateTime.now().add(const Duration(hours: 1)).millisecondsSinceEpoch ~/
-            1000, // Expiration time
+        // 'exp': DateTime.now().add(const Duration(hours: 24)).millisecondsSinceEpoch ~/
+            // 1000, // Expiration time
       },
     );
+    
       // Define the payload
       final jwt = JWT(jsonPayload);
 
